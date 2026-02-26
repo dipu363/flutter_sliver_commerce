@@ -66,7 +66,7 @@ Fake Store API: https://fakestoreapi.com/
 -- Used for: Authentication, Products, User profile
 
 # Run Instructions
-- git clone https://github.com/yourname/flutter_sliver_commerce.git
+- [git clone https://github.com/yourname/flutter_sliver_commerce.git](https://github.com/dipu363/flutter_sliver_commerce)
 - cd flutter_sliver_commerce
 - flutter pub get
 - flutter run
