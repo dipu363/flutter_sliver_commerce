@@ -21,16 +21,15 @@ This project solves a common complex mobile UI problem:
 
 How to combine collapsing headers, sticky tabs, and tabbed lists without scroll conflicts.
 
-🏗 Architecture Overview
+# Architecture Overview
 NestedScrollView
-│
-├── SliverAppBar (Collapsible Header)
-├── SliverPersistentHeader (Sticky TabBar)
-└── TabBarView (Horizontal Navigation)
-      └── ListView (Products)
+->SliverAppBar (Collapsible Header)
+->SliverPersistentHeader (Sticky TabBar)
+ ->TabBarView (Horizontal Navigation)
+ ->ListView (Products)
+ 
 Vertical Scroll Ownership
-
- NestedScrollView owns the ONLY vertical scroll
+NestedScrollView owns the ONLY vertical scroll
 Inner lists do not create independent scroll behavior.
 This guarantees:
 
@@ -39,48 +38,38 @@ No gesture conflict
 Stable UX
 
 # Project Structure
-lib/
-│
-├── main.dart
-├── app.dart
-│
-├── core/
-│   ├── network/
-│   │      dio_client.dart
-│   └── routes/
-│          app_routes.dart
-│
-├── data/
-│   ├── models/
-│   │      product_model.dart
-│   │      user_model.dart
-│   └── repository/
-│          api_repository.dart
-│
-├── modules/
-│   ├── login/
-│   │      login_controller.dart
-│   │      login_page.dart
-│   │      login_binding.dart
-│   │
-│   ├── home/
-│   │      home_controller.dart
-│   │      home_page.dart
-│   │      home_binding.dart
-│   │
-│   └── profile/
-│          profile_controller.dart
-│          profile_page.dart
+# lib/
+
+## main.dart
+## core/
+  -- network/
+    dio_client.dart
+  -- routes/   
+    app_routes.dart
+## data/
+   -- models/
+   -- repository/
+      api_repository.dart
+## modules/
+  -- login/
+     login_controller.dart
+     login_screen.dart
+ -- home/
+      home_controller.dart
+      home_screen.dart
+ -- profile/
+         profile_controller.dart
+         profile_screen.dart
 # API Used
 
 Fake Store API: https://fakestoreapi.com/
-Used for: Authentication, Products, User profile
+-- Used for: Authentication, Products, User profile
 
 # Run Instructions
-git clone https://github.com/yourname/flutter_sliver_commerce.git
-cd flutter_sliver_commerce
-flutter pub get
-flutter run
+-git clone https://github.com/yourname/flutter_sliver_commerce.git
+-cd flutter_sliver_commerce
+-flutter pub get
+-flutter run
 # Scroll & Gesture Design Explanation
 1 Horizontal Swipe Implementation
 Horizontal navigation is implemented using:
