@@ -103,11 +103,11 @@ Slivers allow:Partial layout rendering Scroll-aware UI Native collapsing behavio
 
 # Evaluation Focus Addressed
 
-✔ Single-scroll architecture
-✔ Gesture coordination
-✔ Sticky navigation
-✔ Clean separation of responsibilities
-✔ Explanation of engineering decisions
+- Single-scroll architecture
+- Gesture coordination
+- Sticky navigation
+- Clean separation of responsibilities
+- Explanation of engineering decisions
 
 # Author
 Dipu
