@@ -15,7 +15,6 @@ class ApiRepository {
         "password": pass,
       },
     );
-
     return res.data;
   }
 
