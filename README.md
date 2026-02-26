@@ -66,10 +66,10 @@ Fake Store API: https://fakestoreapi.com/
 -- Used for: Authentication, Products, User profile
 
 # Run Instructions
--git clone https://github.com/yourname/flutter_sliver_commerce.git
--cd flutter_sliver_commerce
--flutter pub get
--flutter run
+- git clone https://github.com/yourname/flutter_sliver_commerce.git
+- cd flutter_sliver_commerce
+- flutter pub get
+- flutter run
 # Scroll & Gesture Design Explanation
 1 Horizontal Swipe Implementation
 Horizontal navigation is implemented using:
