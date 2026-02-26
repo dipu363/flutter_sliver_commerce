@@ -99,5 +99,6 @@ Slivers allow:Partial layout rendering Scroll-aware UI Native collapsing behavio
 - Explanation of engineering decisions
 
 # Author
-Dipu
-Flutter Developer
+Giyas Uddin
+Mobile Application Developer
+Medical System Company Ltd. (Medisys)
